@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManageRoutesPage</class>
+ <widget class="QWidget" name="ManageRoutesPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>944</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BLUEBUS - Manage Routes.</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#142D4E</string>
+   </property>
+   <property name="text">
+    <string>Manage Routes</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#718096</string>
+   </property>
+   <property name="text">
+    <string>Add, update and manage your bus routes.</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="addRouteFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>351</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Add New Routes</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="originInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #F4F7FA;
+    border: 1px solid #DCE3EA;
+    border-radius: 6px;
+    padding: 10px;
+    color: #263747;
+    font-size: 13px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Origin</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="destinationInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #F4F7FA;
+    border: 1px solid #DCE3EA;
+    border-radius: 6px;
+    padding: 10px;
+    color: #263747;
+    font-size: 13px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Destination</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="distanceInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #F4F7FA;
+    border: 1px solid #DCE3EA;
+    border-radius: 6px;
+    padding: 10px;
+    color: #263747;
+    font-size: 13px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Disatnce(km)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Origin</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Destination</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Distance</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addRouteButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #16A6A1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: bold;</string>
+    </property>
+    <property name="text">
+     <string>+ Add Route</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>70</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#142D4E</string>
+   </property>
+   <property name="text">
+    <string>All Routes</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="routesTable">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>100</y>
+     <width>571</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #FFFFFF;
+    alternate-background-color: #F4F7FA;
+    color: #263747;
+    border: none;
+    border-radius: 8px;
+    gridline-color: #E8EDF2;
+    font-size: 12px;
+    selection-background-color: #D9F3F1;
+    selection-color: #142D4E;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #E8EDF2;
+}
+
+QTableWidget::item:selected {
+    background-color: #D9F3F1;
+    color: #142D4E;
+}
+
+QHeaderView::section {
+    background-color: #EAF0F5;
+    color: #142D4E;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #16A6A1;
+    font-size: 12px;
+    font-weight: bold;
+}</string>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Route ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Origin</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Destination</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Distance(km)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="editRouteButton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>532</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #142D4E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #1E426B;
+}</string>
+   </property>
+   <property name="text">
+    <string>Edit Selected Route</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteRouteButton">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>530</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #DC4C4C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #C03939;
+}</string>
+   </property>
+   <property name="text">
+    <string>Delete Selected Route</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #142D4E;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: #16A6A1;
+}</string>
+   </property>
+   <property name="text">
+    <string>← Back to Dashboard</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

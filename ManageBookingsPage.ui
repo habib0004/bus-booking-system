@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>982</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BLUEBUS - Manage Bookings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>22</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#142D4E</string>
+   </property>
+   <property name="text">
+    <string>Manage Bookings</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>60</y>
+     <width>291</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#64748B</string>
+   </property>
+   <property name="text">
+    <string>View and manage all passenger bookings.</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="filterFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>971</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  background-color: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Search Bookings</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchInput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Search by booking ID, passenger name or email</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="statusFilterComboBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>All Bookings</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Confirmed</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cancelled</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pending</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>70</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color: #142D4E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;</string>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>200</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#142D4E</string>
+   </property>
+   <property name="text">
+    <string>All Passenger Bookings</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="bookingsTable">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>241</y>
+     <width>961</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="columnCount">
+    <number>9</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Booking ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Passenger</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Email</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Route</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Travel Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Departure</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Seat</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fare (₦)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="viewBookingButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>560</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #142D4E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>View Booking Details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelBookingButton">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>560</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #DC3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>	Cancel Selected Booking</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: transparent;
+    color: #142D4E;
+    border: 1px solid #142D4E;
+    border-radius: 6px;
+    font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>← Back to Dashboard</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

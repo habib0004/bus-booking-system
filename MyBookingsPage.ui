@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyBookingsPage</class>
+ <widget class="QWidget" name="MyBookingsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BLUEBUS- My Bookings</string>
+  </property>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #E8F5F4;
+    color: #142D4E;
+    border: 1px solid #D0E5E3;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>← Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pageTitle">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#142D4E</string>
+   </property>
+   <property name="text">
+    <string>My Bookings</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>281</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>View and manage your bus reservations</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="bookingsTable">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>851</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #FFFFFF;
+    alternate-background-color: #F4F7FA;
+    color: #263747;
+    border: none;
+    gridline-color: #E5EAF0;
+    selection-background-color: #D9F0EE;
+    selection-color: #142D4E;
+    font-size: 13px;</string>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="showGrid">
+    <bool>false</bool>
+   </property>
+   <property name="sortingEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="columnCount">
+    <number>8</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Booking ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Route</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Travel Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Departure</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Seat</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fare</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Actions</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

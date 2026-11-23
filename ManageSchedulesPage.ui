@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #F4F7FA;</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>40</y>
+     <width>252</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #718096;</string>
+   </property>
+   <property name="text">
+    <string>Create, update and manage bus schedules.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>278</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Manage Schedules</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>211</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add New Schedule</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="routeLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Select Route</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="routeComboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>211</width>
+     <height>38</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="busLabel">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>90</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Select Bus</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="busComboBox">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>110</y>
+     <width>201</width>
+     <height>38</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>90</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Departure Date &amp; Time</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="departureDateTime">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>110</y>
+     <width>194</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yyyy hh:mm AP</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>90</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Arrival Date &amp; Time</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="arrivalDateTime">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>110</y>
+     <width>194</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>dd/MM/yyyy hh:mm AP</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>151</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ticket Fare (₦)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="fareInput">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Enter ticket fare</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addScheduleButton">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>160</y>
+     <width>182</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #16A6A1;
+color: white;
+border: none;
+border-radius: 6px;
+font-weight: bold;</string>
+   </property>
+   <property name="text">
+    <string>+ Add Schedule</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>200</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>All Bus Schedules</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="schedulesTable">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>961</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="columnCount">
+    <number>7</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Schedule ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Route</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Bus</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Departure</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Arrival</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Fare (₦)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="editScheduleButton">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>552</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #142D4E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 8px;</string>
+   </property>
+   <property name="text">
+    <string>Edit Selected Schedule</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelScheduleButton">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>552</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #DC3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 8px;</string>
+   </property>
+   <property name="text">
+    <string>Cancel Selected Schedule</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: transparent;
+    color: #142D4E;
+    border: 1px solid #142D4E;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 6px;</string>
+   </property>
+   <property name="text">
+    <string>← Back to Dashboard</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

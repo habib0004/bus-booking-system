@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyTicketsPage</class>
+ <widget class="QWidget" name="MyTicketsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>846</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BLUEBUS - My Tickets</string>
+  </property>
+  <widget class="QPushButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 255, 226);</string>
+   </property>
+   <property name="text">
+    <string>← Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>211</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>24</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Color: #142D4E</string>
+   </property>
+   <property name="text">
+    <string>My Tickets</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>261</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Color:#718096</string>
+   </property>
+   <property name="text">
+    <string>View and access your bus travel tickets</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="ticketsTable">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>831</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #FFFFFF;
+    alternate-background-color: #F4F7FA;
+    color: #263747;
+    border: none;
+    gridline-color: #E5EAF0;
+    selection-background-color: #D9F0EE;
+    selection-color: #142D4E;
+    font-size: 13px;</string>
+   </property>
+   <property name="columnCount">
+    <number>8</number>
+   </property>
+   <column>
+    <property name="text">
+     <string>Ticket ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Reference</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Route</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Travel Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Departure</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Seat</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Action</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
